@@ -193,13 +193,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Learning from Demonstrations (LfD) methods are applied to transfer human skills to robots from expert demonstrations, enabling them to perform complex tasks.
-However, existing methods often struggle to handle such long-horizon human skills as cleaning or wiping stains on the surface, which involve multiple periodic and transitional movement primitives. 
-To address this limitation, this letter first proposes a novel framework for segmenting, learning, and generalizing multi-periodic human skills, enabling robots to effectively learn different movement primitives and execute these skills in new environments.
-Specifically, The framework introduces an unsupervised learning method to segment long-horizon human demonstrations into periodic and discrete movement primitives. 
-Further, a novel type of discrete dynamical movement primitives, namely transitional movement primitives, is employed to enhance the fluidity of combining different periodic movement primitives in skills.
-To validate the effectiveness of the proposed approach, we conduct extensive experimental evaluations, including step-by-step validation of each procedure's methods in simulation and the implementation of the entire presented framework in the real world.
-The results confirm that the proposed framework accurately learns and generalizes multi-periodic human skills, providing a feasible solution for transferring complex multi-periodic demonstrations to robots in practical applications.
+Visual SLAM plays a crucial role in the automation of underground pipeline inspection. However, images captured under pipeline conditions pose a significant challenge for Visual SLAM systems due to high noise levels and weak features. Existing methods struggle to suppress noise while preserving weak features, as the denoising process often inadvertently removes useful weak feature information. On the other hand, increasing the sensitivity of feature extraction algorithms to detect weak features can lead to noise being mistakenly identified as features.
+To address these limitations, we propose ARS-VINS, a Robust Visual-Inertial Localization Approach leveraging Adaptive Region Selection. ARS-VINS enhances the state-of-the-art VINS-Mono algorithm with an Adaptive Region Selection (ARS) network that intelligently selects stable feature regions. This approach effectively reduces noise while preserving weak but critical features, improving feature extraction in challenging environments.
+We also introduce DualPipe, a specialized dataset containing visual-inertial data and semantic annotations for developing and comprehensively evaluating SLAM systems under realistic pipeline conditions. We evaluate the accuracy and computational efficiency of ARS-VINS against existing state-of-the-art SLAM algorithms on the DualPipe dataset.
+Our results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.3158, outperforming the next best method, VINS-Mono (RMSE 0.3344), by 5.6%. More significantly, in challenging high-noise environments, ARS-VINS maintains robust performance with an RMSE of 0.3245, surpassing VINS-Mono (RMSE 0.5428) by 40.2%, while maintaining comparable real-time performance at 10 Hz.
           </p>
         </div>
       </div>
