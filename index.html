@@ -21,7 +21,6 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link rel="icon" type="image/x-icon" href="./static/images/logo1.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -108,25 +107,29 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="font-size: 3rem;">ARS-VINS: Adaptive Region Selection for Robust Visual-Inertial Localization</h1>
+          <h1 class="title is-1 publication-title" style="font-size: 2.77em;">ARS-VINS: A Robust Visual-Inertial Localization Approach Leveraging Adaptive Region Selection for Underground Pipeline Inspection</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://henrytooyoung.github.io/">Weixun Gao</a><sup>1</sup>,</span>
               <a href="https://henrytooyoung.github.io/">Jiannong Cao</a><sup>1</sup>,</span>
-              <a href="https://henrytooyoung.github.io/">Zhixuan Liang</a><sup>1</sup></span>
+              <a href="https://henrytooyoung.github.io/">Zhixuan Liang</a><sup>1</sup>,</span>
+              <a href="https://henrytooyoung.github.io/">Hanqian Luo</a><sup>1,2</sup>,</span>
+              <a href="https://henrytooyoung.github.io/">Jiale Yu</a><sup>1</sup>,</span>
+              <a href="https://henrytooyoung.github.io/">Jingyun Bi</a><sup>1</sup>,</span>
+              <a href="https://henrytooyoung.github.io/">Tianyu Chen</a><sup>1</sup></span>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>The Hong Kong Polytechnic University, </span>
-            <span class="author-block"><sup>2</sup>to be confirmed</span>
+            <span class="author-block"><sup>2</sup>Nanakai University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://henrytooyoung.github.io/ARS-VINS/"
+                <a href="./static/videos/ARSVINS_ICRA.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -135,7 +138,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://henrytooyoung.github.io/ARS-VINS/"
+                <a href="./static/videos/ARSVINS_ICRA.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -145,7 +148,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://henrytooyoung.github.io/ARS-VINS/"
+                <a href="./static/videos/ARS-VINS-ICRA.mp4"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -155,7 +158,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://henrytooyoung.github.io/ARS-VINS/"
+                <a href="./static/videos/ARS-VINS-ICRA.mp4"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -176,9 +179,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body" style="text-align: center;">
-      <img id="teaser" src="./static/images/top.png" alt="Teaser Image" style="width: 75%; display: block; margin: 0 auto;">
+      <img id="teaser" src="./static/images/top.png" alt="Teaser Image" style="width: 70%; display: block; margin: 5px auto;">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">The</span> pipline.
+        <span class="dnerf">Comparisons</span> of noise levels and feature strengths in pipeline environments.
       </h2>
     </div>
   </div>
@@ -193,10 +196,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Visual SLAM plays a crucial role in the automation of underground pipeline inspection. However, images captured under pipeline conditions pose a significant challenge for Visual SLAM systems due to high noise levels and weak features. Existing methods struggle to suppress noise while preserving weak features, as the denoising process often inadvertently removes useful weak feature information. On the other hand, increasing the sensitivity of feature extraction algorithms to detect weak features can lead to noise being mistakenly identified as features.
-To address these limitations, we propose ARS-VINS, a Robust Visual-Inertial Localization Approach leveraging Adaptive Region Selection. ARS-VINS enhances the state-of-the-art VINS-Mono algorithm with an Adaptive Region Selection (ARS) network that intelligently selects stable feature regions. This approach effectively reduces noise while preserving weak but critical features, improving feature extraction in challenging environments.
-We also introduce DualPipe, a specialized dataset containing visual-inertial data and semantic annotations for developing and comprehensively evaluating SLAM systems under realistic pipeline conditions. We evaluate the accuracy and computational efficiency of ARS-VINS against existing state-of-the-art SLAM algorithms on the DualPipe dataset.
-Our results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.3158, outperforming the next best method, VINS-Mono (RMSE 0.3344), by 5.6%. More significantly, in challenging high-noise environments, ARS-VINS maintains robust performance with an RMSE of 0.3245, surpassing VINS-Mono (RMSE 0.5428) by 40.2%, while maintaining comparable real-time performance at 10 Hz.
+            Visual SLAM (Visual Simultaneous Localization and Mapping) plays a crucial role in the automation of
+            underground pipeline inspection. However, images captured under pipeline conditions pose a significant challenge for Visual
+            SLAM systems due to high noise levels and weak features. Existing methods struggle to suppress noise while preserving
+            weak features, as the denoising process often inadvertently removes useful weak feature information. On the other hand,
+            increasing the sensitivity of feature extraction algorithms to detect weak features can lead to noise being mistakenly identified as features. 
+            To address these limitations, we propose ARS-VINS, a robust visual-inertial localization approach leveraging adaptive region selection. 
+            ARS-VINS enhances the state-of-the-art VINS-Mono algorithm with an Adaptive Region Selection (ARS) network that intelligently selects stable feature regions.
+            This approach effectively reduces noise while preserving weak but critical features, improving feature extraction in challenging
+            environments. We also construct DualPipe, a specialized dataset containing visual-inertial data and semantic annotations for
+            developing and comprehensively evaluating SLAM systems under realistic pipeline conditions. We evaluate the accuracy
+            and computational efficiency of ARS-VINS against existing state-of-the-art SLAM algorithms on the DualPipe dataset. Our
+            results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.3158, outperforming the next best method,
+            VINS-Mono (RMSE 0.3344), by 5.6%. More significantly, ARS-VINS maintains robust performance in challenging high-noise
+            environments with an RMSE of 0.3245, surpassing VINS-Mono (RMSE 0.5428) by 40.2%, while maintaining comparable real-time performance at 10 Hz.  
           </p>
         </div>
       </div>
@@ -209,163 +222,180 @@ Our results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.31
 <section class="section">
   <div class="container is-max-desktop">
     <div class="content">
-     <h3>ControlBench Dataset</h3>
-    <p>We introduce <strong>ControlBench</strong>, a benchmark dataset tailored to reflect the breadth, depth, and complexity of classical control design. The statistics of ControlBench 
-      for each sub-topic is summarzed as below.</p>
+     <h2>Main Contribution</h2>
+    <p>We introduce <strong>ARS-VINS</strong>, a robust visual-inertial localization approach leveraging adaptive region selection.
+       The main contributions of our work to address the challenges in pipe SLAM are summarized as follows:</p>
       </div>
-    <!-- Summary of the work -->
-     <div class="content">
-    <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
-      <img src="./static/images/dataset_overview.png"
-           style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
-    </div>
     <!-- Explanation of the diagram -->
     <div class="content" style="margin-top: 20px;">
     <ul>
-        <li>ControlBench comprises 147 problems sourced from exercises in <a href="https://www.mhprofessional.com/schaum-s-outline-of-feedback-and-control-systems-3rd-edition-9780071829489-usa">Schaum’s outline of feedback and control systems</a>,
-          and problems gathered from undergraduate control classes at University of Michigan (EECS 460) and University of Illinois, Urbana-Champaign (ECE 486).</li>
-        <li>Both textual and visual elements are inclcuded in ControlBench to mirror the multifaceted nature of real-world applications.</li>
-        <li>We also introduced <strong>ControlBench-C</strong>, tansformed from ControlBench by reformulating 100 open-ended problems into multiple-choice questions for efficient evaluations.</li>
+        <li>Our approach effectively handles high image noise and weak-feature pipe environments with an adaptive region selection mechanism, significantly enhancing feature extraction and matching reliability while reducing computational overhead.</li>
+        <li>A comprehensive multi-modal dataset <strong>DualPipe</strong> is developed for in-pipe SLAM scenarios, which includes high image noise data, IMU measurements, and ground truth annotations for both image segmentation and visual-inertial localization.</li>
+        <li>The extensive experimental validation is conducted to demonstrate ARS-VINS’s superior performance under challenging pipe conditions compared to state-of-the-art SLAM systems.</li>
       </ul>
-      <p> Here we show an example extracted from ControlBench and ControlBench-C
-            <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
-      <img src="./static/images/sample_example.png"
-           style="width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
-    </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="content">
-     <h3>Evaluations of Leading LLMs on ControlBench</h3>
-    <p>We assess the capabilities of GPT-4, Claude 3 Opus, and Gemini 1.0 Ultra on ControlBench using a zero-shot prompting followed by self-checking strategy, and examine the responses through human annotation. 
-      Below we present our zero-shot prompt and self-checking prompt.</p>
-      </div>
-    <!-- Summary of the work -->
-     <div class="content">
+      <p> Here we show a brief overview of the <strong>ARS-VINS</strong> proposed system architechture consists of three main components:
     <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
-      <img src="./static/images/zero_prompt.png"
-           style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
+      <img src="./static/images/system.png"
+           style="width: 95%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
+    </div>
     </div>
   </div>
 </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="content">
+     <h2>Dataset and Methodology</h2>
+    </div>
+
+    <!-- Summary of the work -->
+    <div class="content" style="margin-top: 20px;">
+      <ol>
+        <li>A comprehensive dataset DualPipe is specifically designed for the challenges of pipe inspection environments, which incorporates synchronized visual-inertial data, precise trajectory ground truth, and detailed semantic annotations.</li>
+      
+      <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;"> <!-- Center align the image container -->
+        <img src="./static/images/dataset.png"
+            style="width: 65%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
+      </div>
+        <li>DualPipe encompasses a diverse range of defect categories, which captures a wide spectrum of challenges in pipe environments, supporting both semantic segmentation tasks and SLAM algorithm development.</li>
+
+      <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+        <img src="./static/images/table.png" style="width: 60%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" />
+      </div>
+
+        <li>Based on the specialized dataset DualPipe, a baseline model ARS-VINS is proposed which enhances the VINS-Mono framework by incorporating a semantic feature selection network to guide feature extraction in challenging environments.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Summary of the work -->
+    <div class="content has-text-justified">
+      <h2>Real-World Experiments</h2>
+      <p>The real-world experiments utilize a custom-designed three-section wall-supported robot, which  consists of three main components: </p>
+      
+      <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 0; background-color: white; padding: 15px; border-radius: 8px;">
+        <div style="text-align: center; margin: 0 25px;">
+          <img src="./static/images/robot.png" style="height: 250px; width: auto; max-width: 100%; object-fit: cover;" />
+        </div>
+        <div style="text-align: center; margin: 0 25px;">
+          <img src="./static/images/GIF.gif" style="height: 250px; width: auto; max-width: 100%; object-fit: cover;" />
+        </div>
+      </div>
+
+      <div class="content has-text-justified" style="margin-top: 20px">
+        
+        <p>The following table presents the Root Mean Square Error (RMSE) of trajectory estimation for all four algorithms under low and high noise conditions.</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
+        <img src="./static/images/table1.png"
+             style="width: 65%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
+      </div>
+
+      <ul>
+        <li>Performance comparison of different algorithms in low-noise conditions:</li>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 0; background-color: white; padding: 15px; border-radius: 8px;">
+          <div style="text-align: center; margin: 0 5px;">
+            <img src="./static/images/tl.png" style="height: 200px; width: auto; max-width: 100%; object-fit: cover;" />
+            <p>Trajectory comparison</p>
+          </div>
+          <div style="text-align: center; margin: 0 5px;">
+            <img src="./static/images/el.png" style="height: 200px; width: auto; max-width: 100%; object-fit: cover;" />
+            <p>Error comparison</p>
+          </div>
+        </div>
+
+        <li>Performance comparison of different algorithms in high-noise conditions:</li>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 0; background-color: white; padding: 15px; border-radius: 8px;">
+          <div style="text-align: center; margin: 0 25px;">
+            <img src="./static/images/th.png" style="height: 200px; width: auto; max-width: 100%; object-fit: cover;" />
+            <p>Trajectory comparison of visual SLAM systems</p>
+          </div>
+          <div style="text-align: center; margin: 0 25px;">
+            <img src="./static/images/eh.png" style="height: 200px; width: auto; max-width: 100%; object-fit: cover;" />
+            <p>Error comparison of SLAM systems over time steps</p>
+          </div>
+        </div>
+
+        <li>A detailed performance evaluation of the ARS-VINS algorithm was conducted on the NVIDIA Jetson AGX Xavier platform:</li>
+        <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
+          <img src="./static/images/table2.png"
+               style="width: 85%; max-width: 1000px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
+        </div>
+
+
+      </ul>
+
+   </div>
+</section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Summary of the work -->
     <div class="content">
-      <h3>Evaluation Results</h3>
-      <p><strong>Evaluation Metrics</strong>: Accuracy (<strong>ACC</strong>) is defined as the proportion of instances where the LLMs correctly solve the given problems, while Self-Checked Accuracy (<strong>ACC-s</strong>) quantifies the instances in which LLMs 
-        successfully amend their answers after a self-review process. The best results for each metric are highlighted in bold.</p>
-      <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
-      <img src="./static/images/evaluations_whole.png"
-           style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
-      </div>
-      <div class="content has-text-justified">
-        <ul>
-          <li>Claude 3 Opus emerges as the standout model, demonstrating superior performance in both ACC and ACC-s.</li>
-          <li>GPT-4 displays competitive accuracy in specific areas, such as Block Diagrams, Root-Locus Design, and System Sensitivity Measures, but does not match Claude 3 Opus in overall performance.</li>
-          <li>Gemini 1.0 Ultra ranks lower in general effectiveness.</li>
-        </ul>
-       </div>
+      <h2>Example Results Analysis</h2>
+      <p>A qualitative comparison of the point clouds generated by VINS-Mono and ARS-VINS in high-noise conditions, which shows the ARS-VINS exhibits a more focused and accurate representation of the pipe structure, confined within a cylindrical range. </p>
+	<!-- Large plot display -->
+   
+  <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; background-color: #f0f0f0; padding: 15px; border-radius: 8px;">
+    <div style="text-align: center; margin: 0 15px;">
+      <img src="./static/images/pointa.png" style="height: 230px; width: auto; max-width: 100%; object-fit: cover;" />
+      <p>Point cloud of VINS-Mono</p>
+    </div>
+    <div style="text-align: center; margin: 0 15px;">
+      <img src="./static/images/pointb.png" style="height: 230px; width: auto; max-width: 100%; object-fit: cover;" />
+      <p>Point cloud of ARS-VINS</p>
+    </div>
+  </div>
+  </div>
+
+  <p>And also, here is the real-world depolyment of different algorithms in underground pipeline with high-noise:</p>
+  
+
+<div class="columns is-centered" style="margin-top: 10px;">
+<div class="column">
+    <h4 class="title is-5" style="text-align: center;">ARS-VINS</h4>
+    <div class="columns is-centered">
+      <div class="column content" style="text-align: center;">
+    <img src="./static/images/example1.gif" style="height: 90%; text-align: center;">
+    </img>
+  </div>
+  </div>
+</div>
+
+<div class="column">
+  <h4 class="title is-5" style="text-align: center;">VINS-Mono</h4>
+  <div class="columns is-centered">
+    <div class="column content" style="text-align: center;">
+      <img src="./static/images/example2.gif" style="height: 90%;">
+    </img>
+    </div>
+    </div>
+    </div>
+    </div>
+
    </div>
   </div>
 </section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Summary of the work -->
-    <div class="content">
-      <h3>Failure Modes Analysis</h3>
-      <p>Despite their great potential, LLMs can fail in many different ways. The following figure categorizes the LLM failures into seven types, 
-        and highlight the proportions (%) for GPT-4 and Claude 3 Opus, respectively.</p>
-      <div style="text-align: center; margin-top: 20px;"> <!-- Center align the image container -->
-      <img src="./static/images/error_type.png"
-           style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;" <!-- Make the image responsive and centered -->
-      </div>
-      <div class="content has-text-justified">
-        <ul>
-          <li>The biggest bottleneck preventing GPT-4 to achieve better accuracy on ControlBench is its limited reasoning capabilities.</li>
-          <li>The performance of Claude 3 Opus can be further boosted by improving its calculation abilities or calling external tools.</li>
-        </ul>
-       </div>
-   </div>
-  </div>
-</section>
-
-  
-  
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Summary of the work -->
-    <div class="content">
-      <h3>Examples</h3>
-      <p>
-      Here are sampled responses from GPT-4, Claude 3 Opus, and Gemini 1.0 Ultra for selected problems in ControlBench:
-      </p>
-    </div>
-    
-    <!-- Large plot display -->
-    <div class="slider-container">
-      <div class="slider-wrapper">
-        <div class="slider-item">
-          <img src="./static/images/example1.png" alt="Image 1">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example2.png" alt="Image 2">  
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example3.png" alt="Image 3">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example4.png" alt="Image 4">
-        </div>
-           <div class="slider-item">
-          <img src="./static/images/example5.png" alt="Image 5">
-        </div>
-         <div class="slider-item">
-          <img src="./static/images/example6.png" alt="Image 6">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example7.png" alt="Image 6">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example8.png" alt="Image 6">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example9.png" alt="Image 6">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example10.png" alt="Image 6">
-        </div>
-        <div class="slider-item">
-          <img src="./static/images/example11.png" alt="Image 6">
-        </div>
-      </div>
-      <button class="left-btn"><</button>
-      <button class="right-btn"> > </button>
-    </div>
-
-  </div>
-</section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{Darioush2024ControlBench,
+    <h2 class="title">BibTeX (Coming soon)</h2>
+    <pre><code>......</code></pre>
+<!--     <pre><code>@article{Darioush2024ControlBench,
   author    = {Darioush, Kevian and Usman, Syed and Xingang, Guo and Aaron, Havens and Geir, Dullerud and Peter, Seiler and Lianhui, Qin and Bin, Hu},
   title     = {Capabilities of Large Language Models in Control Engineering: A Benchmark Study on GPT-4, Claude 3 Opus, and Gemini 1.0 Ultra},
   journal   = {arXiv preprint arXiv:2404.03647},
   year      = {2024},
-}</code></pre>
+}</code></pre> -->
   </div>
 </section>
 
@@ -375,17 +405,15 @@ Our results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.31
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            This website is licensed under a 
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
           <p>
             This website was built using the
 						<a href="https://nerfies.github.io/">Nerfies website</a> and the
 						<a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
           </p>
-
         </div>
       </div>
     </div>
@@ -448,6 +476,19 @@ Our results show that in low-noise conditions, ARS-VINS achieves an RMSE of 0.31
     const newTransformValue = -currentIndex * 100; // Assuming each slide is 100% of the container width
     sliderWrapper.style.transform = `translateX(${newTransformValue}%)`;
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const videos = [document.getElementById('with'), document.getElementById('without')];
+  
+  videos.forEach(video => {
+    video.addEventListener('volumechange', function () {
+      if (!video.muted) {
+        video.muted = true;
+      }
+    });
+  });
+});
+
 </script>
 
 
